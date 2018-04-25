@@ -1,5 +1,5 @@
 <?php
-$dbhost = "http://mysql-qrattendfirst.7e14.starter-us-west-2.openshiftapps.com:3306/";
+$dbhost = getenv("MYSQL_SERVICE_HOST");
 $dbport = getenv("MYSQL_SERVICE_PORT");
 $dbuser = getenv("databaseuser");
 $dbpwd = getenv("databasepassword");
