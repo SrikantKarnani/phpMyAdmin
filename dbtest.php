@@ -1,13 +1,6 @@
 <?php
-$dbhost = getenv("MYSQL_SERVICE_HOST");
-$dbport = getenv("MYSQL_SERVICE_PORT");
-$dbuser = getenv("databaseuser");
-$dbpwd = getenv("databasepassword");
-$dbname = getenv("databasename");
-
-$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+$connection = new mysqli('localhost', 'sri', '1234', 'attendancemgmtsystem');
 if ($connection->connect_errno) {
-	printf("Connect failed:, $dbhost");
     printf("Connect failed: %s\n", $mysqli->connect_error);
     exit();
 } else {
